@@ -51,7 +51,7 @@ const usuarios = [
 export function RealizarLogin(email, senha) {
 
     //validação para campos em branco
-    if (email == '' || senha == '') {
+    if (email === '' || senha === '') {
         throw new Error('Os campos Email e senha não podem estar vazios');
     }
 
