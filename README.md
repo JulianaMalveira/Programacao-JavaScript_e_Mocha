@@ -110,7 +110,6 @@ A função `buscarTituloDoLivroPorID` cobre os seguintes casos:
 Juliana Malveira  
 QA | Senior Test Analyst  
 
-Projeto desenvolvido para fins de estudo e prática em testes automatizados.
-
+Projeto desenvolvido para fins de estudo.
 ---
 
