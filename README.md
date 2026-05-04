@@ -1,43 +1,39 @@
-# Sistema de Login com Testes Automatizados
+# Projeto de Login com Testes Automatizados (Node.js + Mocha)
 
-Este projeto implementa uma função de login com validações de regras de negócio e testes automatizados utilizando Node.js e assert.
+![Status](https://img.shields.io/badge/tests-passing-brightgreen)
+
+---
+
+## 📌 Descrição
+
+Este projeto simula um sistema de autenticação de usuários com validações de regras de negócio e testes automatizados usando Node.js e Mocha.
 
 ---
 
 ## 🚀 Objetivo
 
-Simular um sistema simples de autenticação de usuários contendo:
-
-- Validação de email e senha
-- Verificação de usuário existente
-- Verificação de credencial expirada
-- Retorno de mensagens de sucesso e erro
-- Testes automatizados para validar os possíveis cenários.
+Praticar lógica de programação e testes automatizados, simulando um sistema real de login com validações de segurança.
 
 ---
 
 ## 🧠 Regras de Negócio
 
-A função de login segue as regras abaixo:
-
-- Campos de email e senha não podem estar vazios
+- Email e senha não podem estar vazios
 - Usuário deve existir no sistema
-- Senha deve estar correta
+- Senha deve estar correta para o usuário
 - Usuário não pode estar com credenciais expiradas
 
 ---
 
-## 🧪 Testes Automatizados
-
-Foram criados 7 cenários de teste:
+## 🧪 Cenários de Teste
 
 ### ✔️ Sucesso
 - Login realizado com usuário válido e não expirado
 
 ### ❌ Erros de autenticação
-- Usuário com credenciais expiradas
+- Credencial expirada
 - Usuário não encontrado
-- Senha incorreta
+- Senha incorreta para usuário válido
 
 ### ❌ Validação de campos
 - Email vazio
@@ -45,17 +41,6 @@ Foram criados 7 cenários de teste:
 - Email e senha vazios
 
 ---
-
-## 🛠️ Tecnologias utilizadas
-
-- Node.js
-- JavaScript
-- Node Assert
-- Mocha
-
----
-
-## 📁 Estrutura do projeto
 
 ## 📁 Estrutura do projeto
 
@@ -76,14 +61,50 @@ Desafio/
 
 ---
 
+## 🛠️ Tecnologias utilizadas
+
+- JavaScript 
+- Node.js
+- Mocha
+- Node Assert
+
+---
+
 ## ▶️ Como executar os testes
 
-Instale as dependências (caso necessário):
+Instalar dependências:
 
 ```bash
 npm install
+```
 
+Rodar testes:
+
+```bash
 npx mocha
+```
 
-Ou, se estiver configurado no package.json:
+ou:
+
+```bash
 npm test
+```
+
+---
+
+## 📌 Aprendizados
+
+- Lógica de autenticação de usuários
+- Estrutura de funções em JavaScript
+- Validação de entrada de dados
+- Tratamento de erros com `throw`
+- Testes automatizados com Mocha
+- Organização de projeto Node.js
+
+---
+
+## 👩‍💻 Autora
+Juliana Malveira
+Projeto desenvolvido para prática de testes automatizados e lógica de programação em JavaScript.
+
+
