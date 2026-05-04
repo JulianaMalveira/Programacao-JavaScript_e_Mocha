@@ -107,6 +107,9 @@ A função `buscarTituloDoLivroPorID` cobre os seguintes casos:
 
 ## 👩‍💻 Autor
 
+Juliana Malveira  
+QA | Senior Test Analyst  
+
 Projeto desenvolvido para fins de estudo e prática em testes automatizados.
 
 ---
