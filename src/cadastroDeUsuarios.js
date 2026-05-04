@@ -25,7 +25,7 @@ const usuarios = [
         nome: 'Joana Angélica',
         email: 'joanaangelica@microsoft.com',
         senha: '333333',
-        expirado: false 
+        expirado: false
     },
 
     {
@@ -33,7 +33,7 @@ const usuarios = [
         nome: 'Ana da Silva',
         email: 'anadasilva@yahoo.com',
         senha: '444444',
-        expirado: true 
+        expirado: true
     },
 
     {
@@ -41,7 +41,7 @@ const usuarios = [
         nome: 'Maria do Carmo',
         email: 'mariadocarmo@gmail.com',
         senha: '555555',
-        expirado: false 
+        expirado: false
     }
 ]
 
@@ -57,19 +57,19 @@ export function RealizarLogin(email, senha) {
 
     for (let i = 0; i < usuarios.length; i++) {
 
+        const usuario = usuarios.at(i);
+
         //Quem usar a função deverá receber uma mensagem dizendo que o login foi realizado com sucesso caso exista um usuário com 
         // email e senha iguais aos informados. 
-        if (usuarios.at(i).email == email && usuarios.at(i).senha == senha && usuarios.at(i).expirado == false) {
+        if (usuario.email === email && usuario.senha === senha) {
+
+            if (usuario.expirado === true) {
+                throw new Error('Suas credenciais expiraram. Renove suas credenciais');
+            }
+
             return 'Login realizado com sucesso';
         }
-
-        // - A função deve dizer que as credenciais expiraram caso expirado for true. 
-        else if (usuarios.at(i).email == email && usuarios.at(i).senha == senha && usuarios.at(i).expirado == true) {
-            throw new Error('Suas credenciais expiraram. Renove suas credenciais');
-        }
-
     }
 
-    //A função também tem que dizer que as credenciais estão incorretas caso o email não exista ou a senha esteja incorreta para aquele email.
     throw new Error('Suas credenciais estão incorretas');
 }
