@@ -12,8 +12,7 @@ Simular um sistema simples de autenticação de usuários contendo:
 - Verificação de usuário existente
 - Verificação de credencial expirada
 - Retorno de mensagens de sucesso e erro
-
-Além disso, o projeto contém testes automatizados para validar todos os cenários possíveis.
+- Testes automatizados para validar os possíveis cenários.
 
 ---
 
@@ -50,10 +49,25 @@ Foram criados 7 cenários de teste:
 ## 🛠️ Tecnologias utilizadas
 
 - Node.js
-- JavaScript (ES Modules)
-- Node Assert (testes nativos)
-- Mocha (estrutura de testes)
+- JavaScript
+- Node Assert
+- Mocha
 
 ---
 
 ## 📁 Estrutura do projeto
+
+
+---
+
+## ▶️ Como executar os testes
+
+Instale as dependências (caso necessário):
+
+```bash
+npm install
+
+npx mocha
+
+Ou, se estiver configurado no package.json:
+npm test
