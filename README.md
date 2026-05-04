@@ -1,4 +1,4 @@
-# Programacao-JavaScript_e_Mocha
+# Gestão de Livros com JavaScript e Testes Automatizados
 
 📚 Gestão de Livros com JavaScript e Testes Automatizados
 
