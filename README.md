@@ -1,9 +1,5 @@
 # Projeto de Login com Testes Automatizados (Node.js + Mocha)
 
-![Status](https://img.shields.io/badge/tests-passing-brightgreen)
-
----
-
 ## 📌 Descrição
 
 Este projeto simula um sistema de autenticação de usuários com validações de regras de negócio e testes automatizados usando Node.js e Mocha.
@@ -104,7 +100,9 @@ npm test
 ---
 
 ## 👩‍💻 Autora
+```
 Juliana Malveira
 Projeto desenvolvido para prática de testes automatizados e lógica de programação em JavaScript.
+```
 
 
