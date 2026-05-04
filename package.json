@@ -59,11 +59,8 @@
     "lru-cache": "^10.4.3",
     "minimatch": "^9.0.9",
     "minipass": "^7.1.3",
-    "mochawesome": "^7.1.4",
-    "mochawesome-report-generator": "^6.3.2",
     "ms": "^2.1.3",
     "object-assign": "^4.1.1",
-    "opener": "^1.5.2",
     "p-limit": "^3.1.0",
     "p-locate": "^5.0.0",
     "package-json-from-dist": "^1.0.1",
@@ -101,11 +98,14 @@
     "yargs-unparser": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "^11.7.5"
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
+    "mochawesome-report-generator": "^6.3.2",
+    "opener": "^1.5.2"
   },
-  "scripts": {
-    "test": "mocha"
-  },
+ "scripts": {
+  "test": "mocha --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=report,html=true,json=true && start mochawesome-report\\report.html"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JulianaMalveira/Programacao-JavaScript_e_Mocha.git"
@@ -113,7 +113,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/JulianaMalveira/Programacao-JavaScript_e_Mocha/issues"
   },
