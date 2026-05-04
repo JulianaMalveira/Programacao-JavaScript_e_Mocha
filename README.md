@@ -56,6 +56,10 @@ Foram criados 7 cenários de teste:
 ---
 
 ## 📁 Estrutura do projeto
+
+## 📁 Estrutura do projeto
+
+```txt
 Desafio/
 │
 ├── src/
@@ -65,9 +69,10 @@ Desafio/
 │   └── cadastroDeUsuarios.test.js
 │
 ├── .gitignore
-├── package-lock.json
 ├── package.json
+├── package-lock.json
 └── README.md
+```
 
 ---
 
